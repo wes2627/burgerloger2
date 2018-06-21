@@ -20,6 +20,7 @@ router.post('/burgers', function(req, res) {
     'burger_name'
   ], [
     req.body.burger_name
+    
   ], function(data) {
     res.redirect('/');
   });
