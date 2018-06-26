@@ -1,4 +1,3 @@
-
 var express = require('express');
 var router = express.Router();
 
@@ -16,11 +15,10 @@ router.get('/', function(req, res) {
 });
 
 router.post('/burgers', function(req, res) {
-  burger.insertOne([
+  burger.insertBurger([
     'burger_name'
   ], [
     req.body.burger_name
-    
   ], function(data) {
     res.redirect('/');
   });
@@ -29,7 +27,7 @@ router.post('/burgers', function(req, res) {
 router.put('/burgers/:id', function(req, res) {
   var condition = 'id = ' + req.params.id;
 
-  burger.updateOne({
+  burger.updateBurger({
     devoured: true
   }, condition, function(data) {
     res.redirect('/');

@@ -1,4 +1,3 @@
-
 var connection = require ('./connection.js');
 
 
@@ -41,7 +40,7 @@ var orm = {
 	},
 
 	
-	insertOne: function(table, cols, vals, cb) {
+	insertBurger: function(table, cols, vals, cb) {
 		
 		var queryString = "INSERT INTO " + table;
 
@@ -64,7 +63,7 @@ var orm = {
 	},
 
 	
-	updateOne: function(table, objColVals, condition, cb) {
+	updateBurger: function(table, objColVals, condition, cb) {
 		
 		var queryString = "UPDATE " + table;
 

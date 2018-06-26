@@ -1,5 +1,22 @@
+//{
+  //  "development": {
+   //   "username": "root",
+   //   "password": "Steve2627!",
+   //   "database": "burgers_db",
+    //  "host": "127.0.0.1",
+    //  "dialect": "mysql"
+   // },
+   // "test": {
+    //  "use_env_variable": "JAWSDB_URL",
+    //  "dialect": "mysql"
+   // },
+   // "production": {
+   //   "use_env_variable": "JAWSDB_URL",
+   //   "dialect": "mysql"
+   // }
+ // }
 
-var mysql = require("mysql");
+ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   host: "localhost",
